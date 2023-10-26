@@ -1,0 +1,9 @@
+:root {
+	--white-color: #FFF;
+	--blue-color: #15A9CB;
+	--black-color: #383A4C;
+}
+
+.rest {
+	--cart-count: 3;
+}
