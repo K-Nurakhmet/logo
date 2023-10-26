@@ -95,7 +95,7 @@ iframe {
   width: 68px;
   height: 68px;
   padding: 14px 8px;
-  font-family: "Pacifico";
+  font-family: "Pacifico", cursive;
   font-style: normal;
   font-weight: 400;
   background-color: var(--blue-color, #15A9CB);

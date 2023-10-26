@@ -4,6 +4,7 @@
 	--black-color: #383A4C;
 }
 
-.rest {
-	--cart-count: 3;
+.company {
+	--cart-count: 4;
+	--gap: 20px;
 }
