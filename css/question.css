@@ -21,6 +21,7 @@
 
 .question__title {
   margin: 0 0 17px;
+  padding: 0 25px 0 0;
   font-size: 35px;
   font-weight: 700;
   text-align: center;
@@ -40,7 +41,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 21px;
+  gap: 18px;
   margin: 0 0 50px;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .question__form-input:nth-child(3) {
-  margin: 0 0 29px;
+  margin: 0 0 31px;
 }
 
 .question__form-submit {
@@ -71,11 +72,11 @@
 
 .question__desc {
   text-align: center;
-  line-height: normal;
 }
 
 .question__desc-line {
   color: #4A76A8;
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
@@ -85,22 +86,30 @@
 
   .question__title {
     margin: 0 0 16px;
+    padding: 0 10px 0 0;
     font-size: 32px;
   }
 
   .question__text {
+    margin: 0 0 45px;
+    padding: 0 0 0 17px;
     font-size: 20px;
   }
 
   .question__form {
     margin: 0 0 30px;
-    gap: 20px;
+    gap: 15px;
   }
 
   .question__form-input {
+    width: 377px;
     padding: 8px 23px;
     font-size: 20px;
     border: 2px solid #FFFFFF;
+  }
+
+  .question__form-input:nth-child(3) {
+    margin: 0 0 33px;
   }
 
   .question__desc {
@@ -115,21 +124,24 @@
 
   .question__title {
     margin: 0 0 10px;
+    padding: 5px 1px 0 0;
     font-size: 20px;
   }
 
   .question__text {
     margin: 0 0 35px;
+    padding: 0 1px 0 0;
     font-size: 12px;
+    white-space: nowrap;
   }
 
   .question__form {
     margin: 0 0 30px;
-    gap: 15px;
+    gap: 12px;
   }
 
   .question__form-input {
-    width: 100%;
+    width: 290px;
     padding: 6px 18px;
     font-size: 14px;
     border: 1px solid #FFF;

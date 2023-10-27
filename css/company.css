@@ -54,32 +54,42 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 50px;
+  gap: var(--gap);
+  counter-reset: count 0;
 }
 
 .company__item {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 16px;
-  flex-basis: 196px;
+  flex-basis: calc(75% / var(--cart) - (var(--gap) * (var(--cart) - 1)) / var(--cart));
+  padding: 122px 0 0 0;
 }
 
-.company__list-num {
+.company__item::before {
+  content: counter(count);
+  position: absolute;
+  top: 6px;
   width: 122px;
   height: 122px;
   padding: 32px 44px;
+  border-radius: 100%;
+  background-color: #23C7EC;
   font-size: 57px;
   font-weight: 500;
   line-height: 100%;
-  background-color: #23C7EC;
-  border-radius: 100%;
+  text-align: center;
   color: var(--white-color, #FFFFFF);
+  counter-increment: count;
 }
 
+
 .company__list-text {
+  padding: 20px 0 0 0;
   text-align: center;
   font-weight: 500;
+  width: 196px;
 }
 
 @media (max-width: 1200px) {
@@ -90,22 +100,22 @@
 
   .company__text {
     position: relative;
-    margin: 0 0 33px;
+    margin: 0 0 32px;
     font-size: 20px;
   }
 
   .company__text::after {
     content: "";
     position: absolute;
-    bottom: 12px;
-    left: 79px;
+    bottom: 10px;
+    left: 72px;
   }
 
   .company__text::before {
     content: "";
     position: absolute;
-    bottom: 12px;
-    right: 79px;
+    bottom: 10px;
+    right: 75px;
   }
 
   .company__text::after,
@@ -115,7 +125,6 @@
     background-color: #383A4C;
   }
 
-
   .company__desc {
     max-width: 666px;
     font-size: 16px;
@@ -123,21 +132,23 @@
   }
 
   .company__item {
-    gap: 26px;
-    flex-basis: 180px;
+    padding: 122px 0 0 0;
   }
 
-  .company__list-num {
+  .company__item::before {
+    top: 4px;
     width: 104px;
     height: 104px;
     padding: 22px 31px;
     font-size: 52px;
+    font-weight: 500;
     line-height: 140.625%;
-    text-align: center;
   }
 
   .company__list-text {
+    padding: 19px 7px 0 0;
     font-size: 18px;
+    width: 180px;
   }
 }
 
@@ -148,22 +159,22 @@
   }
 
   .company__text {
-    margin: 0 0 26px;
+    margin: 0 0 30px;
     font-size: 16px;
   }
 
   .company__text::after {
     content: "";
     position: absolute;
-    bottom: 12px;
-    left: 79px;
+    bottom: 6px;
+    left: 69px;
   }
 
   .company__text::before {
     content: "";
     position: absolute;
-    bottom: 12px;
-    right: 79px;
+    bottom: 6px;
+    right: 68px;
   }
 
   .company__text::after,
@@ -179,11 +190,16 @@
     text-align: center;
   }
 
-  .company__item {
-    flex-basis: 166px;
+
+  .company__item::before {
+    top: 0;
   }
 
   .company__list {
-    gap: 40px;
+    gap: var(--gap);
+  }
+
+  .company__list-text {
+    padding: 9px 1px 0 0;
   }
 }

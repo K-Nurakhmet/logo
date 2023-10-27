@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/Pacifico-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -18,13 +17,13 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__nav">
-        <p class="header__logo logo">Logo</p>
+        <img class="header__logo logo" src="img/Logo.svg" alt="Логотип Logo">
 
         <div class="header__contact contact">
-          <a class="header__info" href="tel:79625561234">
-            <span class="header__info-tel contact-tel">+7 (962) 556 -
+          <a class="contact__info" href="tel:79625561234">
+            <span class="contact-tel">+7 (962) 556 -
               1234</span>
-            <svg class="header__info-svg contact-svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+            <svg class="contact-svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <circle cx="12.916" cy="12" r="12" fill="#555A7B" />
               <path
@@ -32,7 +31,7 @@
                 fill="white" />
             </svg>
           </a>
-          <a class="header__call-back contact-call" href="#question">Перезвоните мне</a>
+          <a class="contact-call" href="#question">Перезвоните мне</a>
         </div>
       </div>
 
@@ -41,19 +40,18 @@
           Заголовок c уникальным торговым предложение по системе 4U
         </h1>
         <p class="header__text">
-          Описания предложения компании. Сайт рыба текст поможет дизайнеру,
-          верстальщику,
-          вебмастеру сгенерировать несколько абзацев более менее осмысленного
-          текста рыбы
-          на русском языке, а начинающему.
+          Описания предложения компании. Сайт рыба текст поможет дизайнеру, верстальщику, вебмастеру сгенерировать
+          несколько абзацев более
+          <span class="header__text-end">.</span>
+          менее осмысленного текста рыбы на русском языке, а начинающему.
         </p>
-        <button class="header__button button" type="button">Подробнее</button>
+        <a class="header__button button" href="#company">Подробнее</a>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="company section">
+    <section class="company section" id="company">
       <div class="container company__container">
         <h2 class="company__title">Уникальный заголовок для преимущества
           компании</h2>
@@ -66,22 +64,18 @@
 
         <ul class="company__list">
           <li class="company__item">
-            <p class="company__list-num">1</p>
             <p class="company__list-text">Первое целевое преимущество</p>
           </li>
 
           <li class="company__item">
-            <p class="company__list-num">2</p>
             <p class="company__list-text">Второе целевое преимущество</p>
           </li>
 
           <li class="company__item">
-            <p class="company__list-num">3</p>
             <p class="company__list-text">Третье целевое преимущество</p>
           </li>
 
           <li class="company__item">
-            <p class="company__list-num">4</p>
             <p class="company__list-text">Четвертое целевое преимущество</p>
           </li>
         </ul>
@@ -100,7 +94,7 @@
           <input class="question__form-input" type="email" name="user-mail" placeholder="E-mail" required>
           <button class="question__form-submit button" type="submit">позвоните мне</button>
         </form>
-        <p class="question__desc">Я даю своё <ins class="question__desc-line">согласие</ins> на обработку
+        <p class="question__desc">Я даю своё <a class="question__desc-line" href="#">согласие</a> на обработку
           моих
           персональных данных</p>
       </div>
@@ -110,15 +104,15 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__content">
-        <p class="footer__logo logo">Logo</p>
+        <img class="footer__logo logo" src="img/Logo.svg" alt="Логотип Logo">
         <p class="footer__text">© 2022 XXXcompany.
           Все права защищены.</p>
       </div>
       <p class="footer__text footer__text_center">Сделано в Ивановым Иваном</p>
       <div class="footer__contact contact">
-        <a class="footer__info" href="tel:79625561234">
-          <span class="footer__info-tel contact-tel">+7 (962) 556 - 1234</span>
-          <svg class="footer__info-svg contact-svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
+        <a class="contact__info" href="tel:79625561234">
+          <span class="contact-tel">+7 (962) 556 - 1234</span>
+          <svg class="contact-svg" width="25" height="24" viewBox="0 0 25 24" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <circle cx="12.916" cy="12" r="12" fill="#555A7B" />
             <path
@@ -126,7 +120,7 @@
               fill="white" />
           </svg>
         </a>
-        <a class="footer__call-back contact-call" href="#question">Перезвоните мне</a>
+        <a class="contact-call" href="#question">Перезвоните мне</a>
       </div>
     </div>
   </footer>

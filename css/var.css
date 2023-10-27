@@ -2,9 +2,20 @@
 	--white-color: #FFF;
 	--blue-color: #15A9CB;
 	--black-color: #383A4C;
+	--gap: 50px;
+	--cart: 4;
 }
 
-.company {
-	--cart-count: 4;
-	--gap: 20px;
+@media (max-width: 930px) {
+	:root {
+		--cart: 2;
+	}
+
+}
+
+@media (max-width: 650px) {
+	:root {
+		--gap: 40px;
+	}
+
 }
